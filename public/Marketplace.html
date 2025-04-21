@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Masihaa</title>
+  <style>
+    body {
+      
+      margin: 0;
+      font-family: Arial, sans-serif;
+       
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      height: 60px;
+      align-items: center;
+      padding: 10px 20px;
+      background-color: white;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    .logo {
+      font-weight: bold;
+      color: #8B5E3C;
+      font-size: 1.5em;
+      display: flex;
+      align-items: center;
+    }
+    .logo-icon {
+      width: 20px;
+      height: 20px;
+      background-color: #8B5E3C;
+      border-radius: 50%;
+      margin-right: 8px;
+    }
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
+    nav a:hover {
+      color: #8B5E3C;
+    }
+    .search-bar {
+      border: 1px solid #ccc;
+      width: 400px;
+      height: auto;
+      border-radius: 20px;
+      padding: 5px 10px;
+      display: flex;
+      align-items: center;
+    }
+    .search-bar input {
+      border: none;
+      outline: none;
+      padding-left: 5px;
+    }
+    .icons {
+      display: flex;
+      align-items: center;
+    }
+    .icons i {
+      margin-left: 15px;
+      cursor: pointer;
+    }
+    .cart {
+      background-color: #4CAF50;
+      color: white;
+      border-radius: 50%;
+      width: 16px;
+      height: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.7em;
+      margin-left: 4px;
+    }
+    .profile {
+      display: flex;
+      align-items: center;
+      margin-left: 15px;
+      cursor: pointer;
+    }
+    .profile i {
+      margin-right: 5px;
+    }
+      .product-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr); /* Four equal columns */
+      gap: 20px; /* Adjust spacing between products */
+      padding: 20px;
+    }
+
+    .product {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+      overflow: hidden;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .product:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    }
+
+    .product img {
+      width: 100%;
+      height: auto;
+      aspect-ratio: 1 / 1; /* Ensures the image is square */
+      object-fit: cover; /* Ensures the image fits within the square without distortion */
+    }
+
+    .product-info {
+      padding: 16px;
+      text-align: center;
+    }
+
+    .product-name {
+      margin: 0;
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    .product-price {
+      margin-top: 6px;
+      font-size: 13px;
+      color: gray;
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <div class="logo-icon"></div>
+      Masihaa
+    </div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="" style="text-decoration: underline;">Marketplace</a>
+      <a href="/public/Tutorials.html">Tutorials</a>
+      <a href="#">Orders</a>
+    </nav>
+    <div class="icons">
+      <div class="search-bar">
+        <input type="text" placeholder="Search pottery..." />
+      </div>
+      <div class="profile">
+        <i class="fa fa-user"></i>
+        <a href="#">Profile</a>
+      </div>
+    </div>
+  </header>
+  <br>
+  <br>
+
+  <div class="product-grid">
+    <div class="product">
+      <img src="pic/Item1.jpg" height="1000px" width="10000px" alt="Tee 1" />
+      <div class="product-info">
+        <div class="product-name">BEACH HOUSE TEE PIGMENT DYED</div>
+        <div class="product-price">Rs. 6,000</div>
+      </div>
+    </div>
+    <div class="product">
+      <img src="pic/Item2.jpg" alt="Tee 2" />
+      <div class="product-info">
+        <div class="product-name">BEACH HOUSE TEE PIGMENT DYED</div>
+        <div class="product-price">Rs. 6,000</div>
+      </div>
+    </div>
+    <div class="product">
+      <img src="pic/Item3.jpg" alt="Tee 3" />
+      <div class="product-info">
+        <div class="product-name">BEACH HOUSE TEE PIGMENT DYED</div>
+        <div class="product-price">Rs. 6,000</div>
+      </div>
+    </div>
+    <div class="product">
+      <img src="pic/Item4.jpg" alt="Tee 4" />
+      <div class="product-info">
+        <div class="product-name">BEACH HOUSE TEE PIGMENT DYED</div>
+        <div class="product-price">Rs. 6,000</div>
+      </div>
+    </div>
+    <div class="product">
+      <img src="pic/Item1.jpg" height="1000px" width="10000px" alt="Tee 1" />
+      <div class="product-info">
+        <div class="product-name">BEACH HOUSE TEE PIGMENT DYED</div>
+        <div class="product-price">Rs. 6,000</div>
+      </div>
+    </div>
+    <div class="product">
+      <img src="pic/Item2.jpg" alt="Tee 2" />
+      <div class="product-info">
+        <div class="product-name">BEACH HOUSE TEE PIGMENT DYED</div>
+        <div class="product-price">Rs. 6,000</div>
+      </div>
+    </div>
+    <div class="product">
+      <img src="pic/Item3.jpg" alt="Tee 3" />
+      <div class="product-info">
+        <div class="product-name">BEACH HOUSE TEE PIGMENT DYED</div>
+        <div class="product-price">Rs. 6,000</div>
+      </div>
+    </div>
+    <div class="product">
+      <img src="pic/Item4.jpg" alt="Tee 4" />
+      <div class="product-info">
+        <div class="product-name">BEACH HOUSE TEE PIGMENT DYED</div>
+        <div class="product-price">Rs. 6,000</div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- FontAwesome for icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</body>
+</html>

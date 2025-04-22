@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>User Info Form</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f9f6f2;
+      color: #333;
+    }
+
+    header {
+      background-color: white;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .logo {
+      color: #8B5E3C;
+      font-weight: bold;
+      font-size: 1.5em;
+    }
+
+    .form-container {
+      max-width: 600px;
+      margin: 40px auto;
+      padding: 30px;
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .form-container h2 {
+      color: #8B5E3C;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 5px;
+      color: #8B5E3C;
+      font-weight: 600;
+    }
+
+    .form-group input,
+    .form-group select {
+      width: 100%;
+      padding: 10px;
+      border: 2px solid #8B5E3C;
+      border-radius: 8px;
+      font-size: 1em;
+      background-color: #fdfbf8;
+    }
+
+    .form-group input:focus,
+    .form-group select:focus {
+      outline: none;
+      border-color: #A66D4F;
+      background-color: #fff;
+    }
+
+    .submit-btn {
+      width: 100%;
+      padding: 12px;
+      background-color: #8B5E3C;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 1em;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+
+    .submit-btn:hover {
+      background-color: #a66d4f;
+    }
+
+    .avatar {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+
+    .avatar i {
+      font-size: 60px;
+      color: #8B5E3C;
+      background-color: #f2e8dc;
+      border-radius: 50%;
+      padding: 20px;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      height: 60px;
+      align-items: center;
+      padding: 10px 20px;
+      background-color: white;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    .logo {
+      font-weight: bold;
+      color: #8B5E3C;
+      font-size: 1.5em;
+      display: flex;
+      align-items: center;
+    }
+    .logo-icon {
+      width: 20px;
+      height: 20px;
+      background-color: #8B5E3C;
+      border-radius: 50%;
+      margin-right: 8px;
+    }
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
+    nav a:hover {
+      color: #8B5E3C;
+    }
+    .search-bar {
+      border: 1px solid #ccc;
+      width: 400px;
+      height: auto;
+      border-radius: 20px;
+      padding: 5px 10px;
+      display: flex;
+      align-items: center;
+    }
+    .search-bar input {
+      border: none;
+      outline: none;
+      padding-left: 5px;
+    }
+    .icons {
+      display: flex;
+      align-items: center;
+    }
+    .icons i {
+      margin-left: 15px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+          <div class="logo-icon"></div>
+          Masihaa
+        </div>
+        <nav>
+          <a href="home.html">Home</a>
+          <a href="" style="text-decoration: underline;">Marketplace</a>
+          <a href="Tutorials.html">Tutorials</a>
+          <a href="orders.html">Orders</a>
+        </nav>
+        <div class="icons">
+          <div class="search-bar">
+            <input type="text" placeholder="Search pottery..." />
+          </div>
+          <div class="profile">
+            <i class="fa fa-user"></i>
+            <a href="profile.html">Profile</a>
+          </div>
+        </div>
+      </header>
+
+  <div class="form-container">
+    <h2>User Information</h2>
+
+    <div class="avatar">
+      <i class="fas fa-user-circle"></i>
+    </div>
+
+    <form>
+      <div class="form-group">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" placeholder="Enter your name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="contact">Contact Number</label>
+        <input type="tel" id="contact" placeholder="Enter contact number" required>
+      </div>
+
+      <div class="form-group">
+        <label for="location">Location</label>
+        <input type="text" id="location" placeholder="Enter your city or area">
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" placeholder="Enter your email" required>
+      </div>
+
+      <div class="form-group">
+        <label for="gender">Gender</label>
+        <select id="gender" required>
+          <option value="">Select gender</option>
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+          <option value="Other">Other</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="religion">Religion</label>
+        <input type="text" id="religion" placeholder="Enter your religion">
+      </div>
+
+      <div class="form-group">
+        <label for="caste">Caste</label>
+        <input type="text" id="caste" placeholder="Enter your caste">
+      </div>
+
+      <div class="form-group">
+        <label for="aadhaar">Aadhaar Card Number</label>
+        <input type="text" id="aadhaar" placeholder="Enter Aadhaar number">
+      </div>
+
+      <button type="submit" class="submit-btn">Submit</button>
+    </form>
+  </div>
+
+</body>
+</html>

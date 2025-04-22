@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Create Profile</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f9f6f2;
+      color: #333;
+    }
+
+  
+    header {
+      display: flex;
+      justify-content: space-between;
+      height: 60px;
+      align-items: center;
+      padding: 10px 20px;
+      background-color: white;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    .logo {
+      font-weight: bold;
+      color: #8B5E3C;
+      font-size: 1.5em;
+      display: flex;
+      align-items: center;
+    }
+    .logo-icon {
+      width: 20px;
+      height: 20px;
+      background-color: #8B5E3C;
+      border-radius: 50%;
+      margin-right: 8px;
+    }
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
+    nav a:hover {
+      color: #8B5E3C;
+    }
+    .search-bar {
+      border: 1px solid #ccc;
+      width: 400px;
+      height: auto;
+      border-radius: 20px;
+      padding: 5px 10px;
+      display: flex;
+      align-items: center;
+    }
+    .search-bar input {
+      border: none;
+      outline: none;
+      padding-left: 5px;
+    }
+    .icons {
+      display: flex;
+      align-items: center;
+    }
+    .icons i {
+      margin-left: 15px;
+      cursor: pointer;
+    }
+    .container {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    h2 {
+      color: #8B5E3C;
+      margin-bottom: 30px;
+    }
+
+    .profile-options {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+
+    .option-box {
+      background-color: white;
+      border: 2px solid #8B5E3C;
+      border-radius: 12px;
+      width: 220px;
+      height: 220px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2em;
+      font-weight: bold;
+      color: #8B5E3C;
+      cursor: pointer;
+      transition: transform 0.2s, background-color 0.2s;
+    }
+
+    .option-box:hover {
+      background-color: #f2e8dc;
+      transform: scale(1.05);
+    }
+
+    @media (max-width: 600px) {
+      .profile-options {
+        flex-direction: column;
+        gap: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <div class="logo-icon"></div>
+      Masihaa
+    </div>
+    <nav>
+      <a href="home.html">Home</a>
+      <a href="Marketplace.html">Marketplace</a>
+      <a href="Tutorials.html" >Tutorials</a>
+      <a href="#" style="text-decoration: underline;">Orders</a>
+    </nav>
+    <div class="icons">
+      <div class="search-bar">
+        <input type="text" placeholder="Search pottery..." />
+      </div>
+      <div class="profile">
+        <i class="fa fa-user"></i>
+        <a href="/public/profile.html">Profile</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <h2><a>Create Profile As</a></h2>
+    <div class="profile-options">
+      <div class="option-box" onclick="window.location.href='/login.html'">
+        TRADER
+      </div>
+      <div class="option-box" onclick="window.location.href='/login.html'">
+        USER
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

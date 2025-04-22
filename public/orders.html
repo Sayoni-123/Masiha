@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Masihaa Orders</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f9f6f2;
+      color: #333;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      height: 60px;
+      align-items: center;
+      padding: 10px 20px;
+      background-color: white;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    .logo {
+      font-weight: bold;
+      color: #8B5E3C;
+      font-size: 1.5em;
+      display: flex;
+      align-items: center;
+    }
+    .logo-icon {
+      width: 20px;
+      height: 20px;
+      background-color: #8B5E3C;
+      border-radius: 50%;
+      margin-right: 8px;
+    }
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
+    nav a:hover {
+      color: #8B5E3C;
+    }
+    .search-bar {
+      border: 1px solid #ccc;
+      width: 400px;
+      height: auto;
+      border-radius: 20px;
+      padding: 5px 10px;
+      display: flex;
+      align-items: center;
+    }
+    .search-bar input {
+      border: none;
+      outline: none;
+      padding-left: 5px;
+    }
+    .icons {
+      display: flex;
+      align-items: center;
+    }
+    .icons i {
+      margin-left: 15px;
+      cursor: pointer;
+    }
+    .container {
+      padding: 30px;
+    }
+
+    h2 {
+      color: #8B5E3C;
+    }
+
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-bottom: 20px;
+    }
+
+    .section {
+      background: white;
+      border-radius: 10px;
+      padding: 20px;
+      flex: 1;
+      min-width: 300px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    }
+
+    .section h3 {
+      margin-top: 0;
+      color: #8B5E3C;
+    }
+
+    .order-item, .wishlist-item {
+      display: flex;
+      align-items: center;
+      border-bottom: 1px solid #eee;
+      padding: 10px 0;
+    }
+
+    .order-item img, .wishlist-item img {
+      width: 60px;
+      height: 60px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-right: 15px;
+    }
+
+    .order-info {
+      flex: 1;
+    }
+
+    .status {
+      padding: 5px 10px;
+      background-color: #e0f5ea;
+      color: #2e7d32;
+      display: inline-block;
+      border-radius: 20px;
+      font-size: 0.9em;
+      margin-left: 10px;
+    }
+
+    @media (max-width: 768px) {
+      .row {
+        flex-direction: column;
+      }
+
+      .search-bar {
+        width: 200px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <div class="logo-icon"></div>
+      Masihaa
+    </div>
+    <nav>
+      <a href="home.html">Home</a>
+      <a href="Marketplace.html">Marketplace</a>
+      <a href="Tutorials.html" >Tutorials</a>
+      <a href="#" style="text-decoration: underline;">Orders</a>
+    </nav>
+    <div class="icons">
+      <div class="search-bar">
+        <input type="text" placeholder="Search pottery..." />
+      </div>
+      <div class="profile">
+        <i class="fa fa-user"></i>
+        <a href="profile.html">Profile</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+
+    <!-- Row 1: Order History + Order Status -->
+    <div class="row">
+      <div class="section">
+        <h3>Order History</h3>
+        <div class="order-item">
+          <img src="/pic/Item2.jpg" alt="Handmade Vase">
+          <div class="order-info">
+            Jute Stool - Ordered on March 10, 2025 <span class="status">Delivered</span>
+          </div>
+        </div>
+        <div class="order-item">
+          <img src="/pic/Screenshot 2025-04-21 202244.png" alt="Clay Mug Set">
+          <div class="order-info">
+            Clay Bowl Set - Ordered on April 5, 2025 <span class="status">Shipped</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <h3>Order Status</h3>
+        <div class="order-item">
+          <img src="/pic/Item3.jpg" alt="Decorative Plate">
+          <div class="order-info">
+              Circular Jute Mat - Ordered on April 18, 2025 <span class="status">Processing</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Row 2: Wishlist + Cart -->
+    <div class="row">
+      <div class="section">
+        <h3>Wishlist</h3>
+        <div class="wishlist-item">
+          <img src="/pic/Screenshot 2025-04-21 202610.png" alt="Terracotta Planter">
+          <div class="order-info">Floor Mat</div>
+        </div>
+        <div class="wishlist-item">
+          <img src="/pic/Item2.jpg" alt="Blue Ceramic Bowl">
+          <div class="order-info">Jute Stool</div>
+        </div>
+      </div>
+
+      <div class="section">
+        <h3>Cart</h3>
+        <ul>
+          <li>Glazed Pot - Qty: 2</li>
+          <li>Miniature Cup Set - Qty: 1</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>

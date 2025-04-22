@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Seller Dashboard</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background-color: #fdf9f3;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      height: 60px;
+      align-items: center;
+      padding: 10px 20px;
+      background-color: white;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    .logo {
+      font-weight: bold;
+      color: #8B5E3C;
+      font-size: 1.5em;
+      display: flex;
+      align-items: center;
+    }
+    .logo-icon {
+      width: 20px;
+      height: 20px;
+      background-color: #8B5E3C;
+      border-radius: 50%;
+      margin-right: 8px;
+    }
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
+    nav a:hover {
+      color: #8B5E3C;
+    }
+    .search-bar {
+      border: 1px solid #ccc;
+      width: 400px;
+      height: auto;
+      border-radius: 20px;
+      padding: 5px 10px;
+      display: flex;
+      align-items: center;
+    }
+    .search-bar input {
+      border: none;
+      outline: none;
+      padding-left: 5px;
+    }
+
+    .dashboard {
+      padding: 30px;
+    }
+
+    h1 {
+      color: #4b2e1e;
+      margin-bottom: 30px;
+    }
+
+    .cards {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      flex: 1 1 220px;
+      background-color: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+
+    .card h2 {
+      font-size: 1.2em;
+      margin: 0;
+      color: #4b2e1e;
+    }
+
+    .card p {
+      font-size: 1.5em;
+      font-weight: bold;
+      color: #4b2e1e;
+      margin-top: 8px;
+    }
+
+    .tabs {
+      margin-top: 30px;
+      display: flex;
+      gap: 20px;
+    }
+
+    .tab {
+      padding: 10px 20px;
+      background-color: #d6bfa8;
+      border-radius: 20px;
+      color: #4b2e1e;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    .tab.active {
+      background-color: #8b5e3c;
+      color: white;
+    }
+
+    .product-section {
+      margin-top: 30px;
+      background-color: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+
+    .product-section h3 {
+      color: #4b2e1e;
+      margin-bottom: 20px;
+    }
+
+    .add-button {
+      background-color: #8b5e3c;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 8px;
+      font-size: 1em;
+      cursor: pointer;
+      float: right;
+      margin-bottom: 20px;
+    }
+
+    .add-button:hover {
+      background-color: #a66d4f;
+    }
+  </style>
+</head>
+<body>
+    
+
+    <header>
+        <div class="logo">
+          <div class="logo-icon"></div>
+          Masihaa
+        </div>
+        <nav>
+          <a href="/public/home.html">Home</a>
+          <a href="/public/Marketplace.html" >Marketplace</a>
+          <a href="/public/Tutorials.html">Tutorials</a>
+          <a href="/public/orders.html">Orders</a>
+        </nav>
+        <div class="icons">
+          <div class="search-bar">
+            <input type="text" placeholder="Search pottery..." />
+          </div>
+          <div class="profile">
+            <i class="fa fa-user"></i>
+            <a href="/public/profile.html">Profile</a>
+          </div>
+        </div>
+      </header>
+
+  <div class="dashboard">
+    <h1>Seller Dashboard</h1>
+
+    <div class="cards">
+      <div class="card">
+        <h2>Total Products</h2>
+        <p>0</p>
+      </div>
+      <div class="card">
+        <h2>Total Stock</h2>
+        <p>0 units</p>
+      </div>
+      <div class="card">
+        <h2>Inventory Value</h2>
+        <p>$0.00</p>
+      </div>
+      <div class="card">
+        <h2>Shop Views</h2>
+        <p>142</p>
+      </div>
+    </div>
+
+    <div class="tabs">
+      <div class="tab active">Products</div>
+      <div class="tab">Orders</div>
+      <div class="tab">Analytics</div>
+      <div class="tab">Settings</div>
+    </div>
+
+    <div class="product-section">
+      <button class="add-button">+ Add Product</button>
+      <h3>Your Products</h3>
+      <p>No products yet.</p>
+    </div>
+  </div>
+
+</body>
+</html>

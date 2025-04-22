@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Home | ClayMarket</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fdf9f3;
+      color: #4b2e1e;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      height: 60px;
+      align-items: center;
+      padding: 10px 20px;
+      background-color: white;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    .logo {
+      font-weight: bold;
+      color: #8B5E3C;
+      font-size: 1.5em;
+      display: flex;
+      align-items: center;
+    }
+    .logo-icon {
+      width: 20px;
+      height: 20px;
+      background-color: #8B5E3C;
+      border-radius: 50%;
+      margin-right: 8px;
+    }
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
+    nav a:hover {
+      color: #8B5E3C;
+    }
+    .search-bar {
+      border: 1px solid #ccc;
+      width: 400px;
+      height: auto;
+      border-radius: 20px;
+      padding: 5px 10px;
+      display: flex;
+      align-items: center;
+    }
+    .search-bar input {
+      border: none;
+      outline: none;
+      padding-left: 5px;
+    }
+
+
+    .hero {
+      padding: 80px 40px;
+      background-image: url('pic/bg.png'); /* Add the background image */
+      background-repeat: no-repeat;
+      background-size: cover; /* Ensure the image covers the entire section */
+      background-position: center; /* Center the image */
+      color: rgb(255, 255, 255);
+      text-shadow: 0 2px 8px rgba(0, 0, 0, 0.7); /* Increase text shadow for better visibility */
+      position: relative; /* For overlay positioning */
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.4); /* Add a semi-transparent dark overlay */
+      z-index: 1; /* Place the overlay below the text */
+    }
+
+    .hero h1, .hero p, .hero button {
+      position: relative; /* Ensure text and button are above the overlay */
+      z-index: 2;
+    }
+
+    .hero h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 1.3em;
+      max-width: 600px;
+    }
+
+    .hero button {
+      margin-top: 20px;
+      padding: 12px 24px;
+      background-color: #8b5e3c;
+      color: white;
+      border: none;
+      font-size: 1em;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    section {
+      padding: 60px 40px;
+    }
+
+    .features {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+
+    .feature-card {
+      flex: 1 1 260px;
+      background: white;
+      border-radius: 12px;
+      padding: 30px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+
+    .feature-card i {
+      font-size: 2.5em;
+      margin-bottom: 15px;
+      color: #8b5e3c;
+    }
+
+    .feature-card h3 {
+      margin: 10px 0;
+      font-size: 1.3em;
+    }
+
+    footer {
+      background-color: #f19707;
+      color: white;
+      padding: 40px;
+      text-align: center;
+      margin-top: 40px;
+    }
+    
+  </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+          <div class="logo-icon"></div>
+          Masihaa
+        </div>
+        <nav>
+          <a href="#" style="text-decoration: underline;">Home</a>
+          <a href="Marketplace.html" >Marketplace</a>
+          <a href="Tutorials.html">Tutorials</a>
+          <a href="orders.html">Orders</a>
+        </nav>
+        <div class="icons">
+          <div class="search-bar">
+            <input type="text" placeholder="Search pottery..." />
+          </div>
+          <div class="profile">
+            <i class="fa fa-user"></i>
+            <a href="/public/profile.html">Profile</a>
+          </div>
+        </div>
+      </header>
+
+
+  <div class="hero">
+    <h1>Welcome to ClayMarket</h1>
+    <p>Discover, Learn, and Connect with the world of handcrafted pottery. Join a thriving community of creators and collectors.</p>
+    <button onclick="window.location.href='/public/marketplace.html'">Explore Marketplace</button>
+  </div>
+
+  <section>
+    <h2 style="text-align:center; margin-bottom: 40px;">What You Can Do</h2>
+    <div class="features">
+      <div class="feature-card">
+        <i class="fas fa-store"></i>
+        <h3>Buy & Sell Crafts</h3>
+        <p>Join the marketplace to sell your handmade goods or find unique artisan products.</p>
+      </div>
+      <div class="feature-card">
+        <i class="fas fa-chalkboard-teacher"></i>
+        <h3>Learn from Tutorials</h3>
+        <p>Get inspired and skilled with our step-by-step craft tutorials curated for all skill levels.</p>
+      </div>
+      <div class="feature-card">
+        <i class="fas fa-box-open"></i>
+        <h3>Track Your Orders</h3>
+        <p>Monitor purchases and sales all in one place with your personal order dashboard.</p>
+      </div>
+      <div class="feature-card">
+        <i class="fas fa-user-circle"></i>
+        <h3>Personal Profiles</h3>
+        <p>Create profiles as a Trader or User to customize your experience and build trust.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 ClayMarket. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
